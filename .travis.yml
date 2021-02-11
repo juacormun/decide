@@ -13,13 +13,8 @@ before_script:  # ejecutar antes del script
 language: python  # lenguaje
 python:   # intérprete
   - "3.6"
-  - "3.8"
-env:
-  - DJANGO_VERSION=2.1.13
-  - DJANGO_VERSION=2.2.6
 install:  # instalar las dependecias
   - pip install -r requirements.txt
-  - pip install Django==$DJANGO_VERSION
   - pip install codacy-coverage
   - pip install selenium
   - sudo apt-get install chromium-browser
